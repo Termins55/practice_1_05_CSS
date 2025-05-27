@@ -5,69 +5,63 @@
 body {
   padding: 15px;
   background-image: url(https://images.pexels.com/photos/20317707/pexels-photo-20317707.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-    display: flex;
-    flex-wrap: wrap;
-      /* flex-direction: column; */
-      align-items: center;
-    /* background-color: white; */
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    
-
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .userCard {
+  margin: 15px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* margin: 10px; */
-  /* padding: 20px; */
-  /* flex-basis: 350px; */
-  /* flex-grow: 1; */
-  min-width: 380px;
-  min-height: 160px;
-    
-    background: linear-gradient(to bottom, rgba(49,52,91,255) 80%, white 20%);
-
-  /* background-color: blue; */
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
-        /* opacity: 0.2; */
-
-
+  flex-basis: 380px;
+  flex-grow: 1;
+  min-width: 340px;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .userCardBg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(49, 52, 91, 255);
+  border-radius: 12px 12px 0 0;
+  padding: 20px;
+  height: 100%;
 }
 
 .bellBtn {
   align-self: flex-start;
-    margin: 20px 0 0 20px;
-    text-decoration: none;
-
+  margin: 20px 0 0 20px;
+  background-color: rgba(49, 52, 91, 255);
+  color: rgba(126, 129, 184, 255);
+  border: 0;
+  font-size: large;
 }
 
 .postBtn {
   align-self: flex-end;
-  /* margin-top: -22px; */
-  margin: -22px 20px 0 0;
+  margin: -25px 20px 0 0;
+  background-color: rgba(49, 52, 91, 255);
+  color: rgba(126, 129, 184, 255);
+  border: 0;
+  font-size: larger;
 }
 
 .userName {
-    margin-top: 25px;
-    font-weight: 500;
-  font-size: 18px;
+  margin-top: 25px;
+  font-size: 2rem;
   margin-bottom: 4px;
   color: white;
+  letter-spacing: 0.1rem;
 }
 
 .userSocial {
-    /* font-weight: 400; */
-  font-size: 14px;
-  color: rgba(126,129,184,255);
+  font-size: 1.2rem;
+  color: rgba(126, 129, 184, 255);
   margin-bottom: 12px;
 }
 
@@ -76,29 +70,56 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  
+}
+
+.userFeather {
+  display: flex;
+  justify-content: flex-end;
+  margin: -90px 40px 0 0;
 }
 
 .featherBtn {
-    align-self: flex-end;
-
+  background-color: lightskyblue;
+  border-radius: 50%;
+  color: white;
+  border: 10px solid lightskyblue;
+  font-size: 50px;
+  text-align: end;
 }
 
 .cardFooter {
-    /* background-color: white; */
-
-
-    /* padding: 50px; */
-    margin-top: auto;
-    align-self: stretch;
-    /* min-height: 100px; */
-    
-
+  background-color: white;
+  border-radius: 0 0 12px 12px;
+  padding: 50px 10px 50px 10px;
+  margin-top: auto;
+  align-self: stretch;
 }
 
 .socialInfo {
-    display: flex;
-  justify-content: center;
-  /* gap: 10px; */
-  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.socialInfoCol1,
+.socialInfoCol2 {
+  border-right: 1px solid gray;
+  padding-right: 40px;
+}
+
+.socialInfoCol3 {
+  padding-right: 0;
+}
+
+.userNumberInf {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+.userTextInf {
+  font-size: 10px;
+  font-weight: 300;
+  color: gray;
+  letter-spacing: 1px;
 }
