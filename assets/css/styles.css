@@ -21,6 +21,7 @@ body {
   min-width: 340px;
   max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
 }
 
 .userCardBg {
@@ -46,9 +47,23 @@ body {
   align-self: flex-end;
   margin: -25px 20px 0 0;
   background-color: rgba(49, 52, 91, 0);
-  color: rgba(126, 129, 184, 255);
+  color: rgba(126, 129, 184, 0.8);
   border: 0;
   font-size: larger;
+}
+
+.userImgDiv {
+  border-radius: 50%;
+  border: 10px solid rgba(49, 52, 91, 0.08);
+  box-shadow: 0 0 0 1px rgba(99, 103, 157, 1), 0 0 0 10px rgba(49, 52, 91, 0.3),
+    0 0 0 11px rgba(99, 103, 157, 0.4);
+}
+
+.userImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .userName {
@@ -61,15 +76,8 @@ body {
 
 .userSocial {
   font-size: 1.2rem;
-  color: rgba(126, 129, 184, 255);
+  color: rgba(126, 129, 184, 1);
   margin-bottom: 12px;
-}
-
-.userImg {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
 }
 
 .userFeather {
