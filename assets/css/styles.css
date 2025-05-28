@@ -20,14 +20,14 @@ body {
   flex-grow: 1;
   min-width: 340px;
   max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .userCardBg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(49, 52, 91, 255);
+  background-color: rgba(49, 52, 91, 0.8);
   border-radius: 12px 12px 0 0;
   padding: 20px;
   height: 100%;
@@ -36,8 +36,8 @@ body {
 .bellBtn {
   align-self: flex-start;
   margin: 20px 0 0 20px;
-  background-color: rgba(49, 52, 91, 255);
-  color: rgba(126, 129, 184, 255);
+  background-color: rgba(49, 52, 91, 0);
+  color: rgba(126, 129, 184, 0.8);
   border: 0;
   font-size: large;
 }
@@ -45,7 +45,7 @@ body {
 .postBtn {
   align-self: flex-end;
   margin: -25px 20px 0 0;
-  background-color: rgba(49, 52, 91, 255);
+  background-color: rgba(49, 52, 91, 0);
   color: rgba(126, 129, 184, 255);
   border: 0;
   font-size: larger;
